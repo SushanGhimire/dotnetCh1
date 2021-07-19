@@ -1,22 +1,30 @@
 ﻿using System;
-
+using System.Collections;
 namespace testing
 {
-    public delegate void testingDelegate(); // decelaration 
-    class handelingDelegate
+    class Program
     {
-        public static void showme()
-        {
-            System.Console.WriteLine("I am called by delegate");
-        }
         static void Main(string[] args)
         {
-            testingDelegate t = new testingDelegate(showme);
-            t();
+            ArrayList al = new ArrayList();
+            al.Add(1);
+            al.Add(80);
+            al.Add(13);
+            al.Add(120);
+            al.Add(100);
+            foreach (int i in al)
+                System.Console.WriteLine(i);
+            al.RemoveAt(2); // removing the data of index 2 from array i.e 23
+            al.Remove(100); // removing 100 from array
+            System.Console.WriteLine("...........................");
+            foreach (int i in al)
+                System.Console.WriteLine(i);
+            System.Console.WriteLine("...........................");
+            System.Console.WriteLine("Sorted Array ");
+            al.Sort();
+            foreach (int i in al)
+                System.Console.WriteLine(i);
 
-            //delegate is simply like a function pointer. whenever a event is triger delegate tells which methods to call.
-
-            //firstly me made the delegate  and when we made the object of delegate we pass the showme method to it. basically what it does is when program run program will create the new object of delegate and since we have pass pointer to showme() method inside the delegate object it will automatically trigger the showme() method and run the command inside the showme().
         }
     }
 }
