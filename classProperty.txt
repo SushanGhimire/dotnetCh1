@@ -9,13 +9,13 @@ namespace testing
 
         public int setNum1
         {
-            get { return setNum1; } //getting value
-            set { num1 = value; } //setting the value
+            get { return num1; } //gettting variable from above
+            set { num1 = value; } //setting the value to the variable
         }
         public int setNum2
         {
-            get { return setNum2; } //getting value
-            set { num2 = value; } //setting the value
+            get { return num2; }  //gettting variable from above
+            set { num2 = value; } //setting the value to the variable
         }
         public void display()
         {
