@@ -1,0 +1,31 @@
+using System;
+
+namespace testing
+{
+    abstract class Student // to make the abstract method class must be abstract class otherwise we cannot make abstract method
+    {
+        public abstract void display(); // abstract method
+        public void print()
+        {
+            System.Console.WriteLine("Non abstract method");
+        }
+    }
+    class Child : Student
+    {
+        public override void display() // we must implete ment the about abstract method here since we have extended or inherited the parent class otherwise it will throw an error
+        {
+            System.Console.WriteLine("Overriding the abstract method in child class");
+        }
+
+    }
+    class run
+    {
+        static void Main(string[] arg)
+        {
+            Child c = new Child();
+            c.print();
+            c.display();
+            Console.ReadKey();
+        }
+    }
+}
