@@ -2,23 +2,31 @@
 
 namespace testing
 {
-    class TestingClass
+    public class ParentClass
     {
-        int id;
-        string name;
-        TestingClass(int passedId, string passedName)
+        public void print()
         {
-            this.id = passedId; // here we catch the value from passedId and set it to id;
-            this.name = passedName; //// here we catch the value from passedname and set it to name;
+            Console.WriteLine("I am from Parent Class");
         }
 
-        static void Main()
+    }
+    public class ChildClass : ParentClass
+    {
+        public ChildClass()
         {
-            TestingClass t = new TestingClass(10, "LICT");
-            Console.WriteLine("Id of {0} is {1}", t.name, t.id);
-            Console.ReadKey();
-            // this is the example of parameterized constructor where we have passed the valaue for id and name
-            // when we create object it acutomatically invoke the constructor TestingClass() with passed value
+            Console.WriteLine("I am from child Constructor");
+        }
+    }
+    class run
+    {
+        static void Main(string[] args)
+        {
+            ChildClass c = new ChildClass();
+            c.print();
+
+            //here we extend the parent class from child class. since he have inheritd the parent class so we can access the parent methods from childclass object.
+
+            // here when we create the childclass object it automatically invoke the childclass contructor and we access the print method of parent class from childClass object
         }
     }
 
