@@ -2,32 +2,39 @@
 
 namespace testing
 {
-    public class ParentClass
+    public class Parent
     {
-        public void print()
+        public string name = "LICT";
+        public Parent()
         {
-            Console.WriteLine("I am from Parent Class");
+            System.Console.WriteLine(" i am from Parent Constructor");
         }
-
-    }
-    public class ChildClass : ParentClass
-    {
-        public ChildClass()
+        public void display()
         {
-            Console.WriteLine("I am from child Constructor");
+            System.Console.WriteLine("I am from Parent Class");
+        }
+    }
+    public class Child : Parent
+    {
+        public Child() : base()
+        {
+            System.Console.WriteLine("I am from child constructor");
+            System.Console.WriteLine(base.name);
+            base.display();
+            //here using base keyword we can access the all public methods of parent class
+            //base keyword is used in sub class therefore before using base keyword super class should be made firt
+            // here Parent is super class and child is sub class
         }
     }
     class run
     {
         static void Main(string[] args)
         {
-            ChildClass c = new ChildClass();
-            c.print();
+            Child c = new Child();
+            // c.display();
+            Console.ReadKey();
 
-            //here we extend the parent class from child class. since he have inheritd the parent class so we can access the parent methods from childclass object.
-
-            // here when we create the childclass object it automatically invoke the childclass contructor and we access the print method of parent class from childClass object
+            //since it is a example of inheritance we can access display method from here also
         }
     }
-
 }
