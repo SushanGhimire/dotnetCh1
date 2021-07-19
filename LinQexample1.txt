@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+
+namespace testing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declearing  the array
+            int[] numbers = new int[] { 12, 24, 13, 34, 13 };
+            string[] names = new string[] { "A C", "B A", "C D", "D C", "E B", "F D" };
+            //defining the query expression
+            var numQuery =
+            from num in numbers
+            where num > 20
+            select num;
+            var nameQuery = from name in names
+                            where name.Contains("C")
+                            select name;
+            foreach (int i in numQuery)
+                System.Console.WriteLine(i);
+            foreach (string i in nameQuery)
+                System.Console.WriteLine(i);
+        }
+    }
+}
