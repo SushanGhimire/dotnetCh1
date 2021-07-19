@@ -1,0 +1,28 @@
+using System;
+
+namespace testing
+{
+    class Greatest
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Greatest number Checker");
+            int a, b, c;
+            Console.Write("Enter the N1: ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Enter the N2: ");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Enter the N3: ");
+            c = int.Parse(Console.ReadLine());
+
+            if (a > b && a > c)
+                Console.WriteLine("{0} is the greatest among {1}, {2}, {3}", a, a, b, c);
+            else if (b > a && b > c)
+                Console.WriteLine("{0} is the greatest among {1}, {2}, {3}", b, a, b, c);
+            else
+                Console.WriteLine("{0} is the greatest among {1}, {2}, {3}", c, a, b, c);
+
+
+        }
+    }
+}

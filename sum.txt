@@ -1,0 +1,22 @@
+using System;
+
+namespace testing
+{
+    class Sum
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This is my first C# program");
+            int a, b, sum = 0;
+            Console.Write("Enter the first number: ");
+            a = int.Parse(Console.ReadLine());
+            // a = Convert.ToInt32(Console.ReadLine()); // sec method to convert to int
+            Console.WriteLine("Enter the second number: ");
+            // b = int.Parse(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            sum = a + b;
+            Console.WriteLine("Sum of {0} and {1} is {2}", a, b, sum);
+
+        }
+    }
+}

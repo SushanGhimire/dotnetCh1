@@ -1,0 +1,36 @@
+using System;
+
+namespace testing
+{
+    class ClassProperty
+    {
+        private int num1;
+        private int num2;
+
+        public int setNum1
+        {
+            get { return setNum1; } //getting value
+            set { num1 = value; } //setting the value
+        }
+        public int setNum2
+        {
+            get { return setNum2; } //getting value
+            set { num2 = value; } //setting the value
+        }
+        public void display()
+        {
+            Console.WriteLine("Numbers are {0} and {1} ", num1, num2);
+        }
+    }
+    class run
+    {
+        static void Main(string[] args)
+        {
+            ClassProperty c = new ClassProperty();
+            c.setNum1 = 10;
+            c.setNum2 = 20;
+            c.display();
+        }
+    }
+
+}

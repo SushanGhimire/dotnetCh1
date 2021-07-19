@@ -1,0 +1,18 @@
+using System;
+
+namespace testing
+{
+    class Vatiz
+    {
+        public void display()
+        {
+            Console.WriteLine("Hello vatiz");
+        }
+        static void Main(string[] args)
+        {
+            Vatiz v = new Vatiz();
+            v.display();
+            Console.ReadKey();
+        }
+    }
+}

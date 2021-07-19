@@ -1,0 +1,24 @@
+using System;
+
+namespace testing
+{
+    class IfElse
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Odd Even Checker");
+            int a;
+            Console.Write("Enter the number of ypur wish: ");
+            a = int.Parse(Console.ReadLine());
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("Number is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+
+            }
+        }
+    }
+}

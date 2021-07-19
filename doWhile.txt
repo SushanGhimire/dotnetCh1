@@ -1,0 +1,17 @@
+using System;
+
+namespace testing
+{
+    class doWhileLoop
+    {
+        static void Main(string[] arg)
+        {
+            int a = 0;
+            do
+            {
+                Console.WriteLine(a);
+                a++;
+            } while (a < 5);
+        }
+    }
+}

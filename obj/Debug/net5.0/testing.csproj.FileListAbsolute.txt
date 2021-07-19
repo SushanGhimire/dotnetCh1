@@ -1,0 +1,16 @@
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing.deps.json
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing.runtimeconfig.json
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing.runtimeconfig.dev.json
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing.dll
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/ref/testing.dll
+/home/sushan/Documents/PracticeMVCDotNet/testing/bin/Debug/net5.0/testing.pdb
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.csproj.AssemblyReference.cache
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.AssemblyInfoInputs.cache
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.AssemblyInfo.cs
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.csproj.CoreCompileInputs.cache
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.dll
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/ref/testing.dll
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.pdb
+/home/sushan/Documents/PracticeMVCDotNet/testing/obj/Debug/net5.0/testing.genruntimeconfig.cache

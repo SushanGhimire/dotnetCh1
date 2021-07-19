@@ -1,0 +1,16 @@
+using System;
+
+namespace testing
+{
+    class forEachLopp
+    {
+        static void Main(string[] arg)
+        {
+            string[] country = { "Nepal", "China", "England", "USA", "Australia" }; 
+            foreach (string x in country)
+            {
+                Console.WriteLine(x);
+            }
+        }
+    }
+}

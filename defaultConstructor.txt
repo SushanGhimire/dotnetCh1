@@ -1,0 +1,22 @@
+using System;
+
+namespace testing
+{
+    class TestingClass
+    {
+        int id = 10;
+        string name = "LICT";
+
+        TestingClass()
+        {
+            Console.WriteLine("Id of {0} is {1} ", name, id);
+        }
+        static void Main(string[] args)
+        {
+            TestingClass t = new TestingClass();
+            Console.ReadKey();
+            // when we create object it acutomatically invoke the constructor TestingClass()
+            // this is the example of deafult constructor where we have used default vale of id and name
+        }
+    }
+}

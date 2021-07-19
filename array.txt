@@ -1,0 +1,22 @@
+using System;
+
+namespace testing
+{
+    class forEachLopp
+    {
+        static void Main(string[] arg)
+        {
+            // array declaration 
+            string[] country;
+            //value initialization
+            country = new string[5] { "Nepal", "China", "England", "USA", "Australia" };
+            // or you can directly declare array as
+            // string[] country = { "Nepal", "China", "England", "USA", "Australia" };
+            Console.WriteLine("{0}", country[0]);
+            Console.WriteLine("{0}", country[1]);
+            Console.WriteLine("{0}", country[2]);
+            Console.WriteLine("{0}", country[3]);
+            Console.WriteLine("{0}", country[4]);
+        }
+    }
+}
