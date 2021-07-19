@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+namespace testing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> names = new List<string>();
+            List<int> numbers = new List<int>();
+
+            names.Add("A");
+            names.Add("B");
+            names.Add("C");
+            names.Add("D");
+            names.Add("E");
+            names.Add("F");
+            names.Add("G");
+            names.Add("H");
+
+            numbers.Add(1);
+            numbers.Add(2);
+            numbers.Add(3);
+            numbers.Add(4);
+            numbers.Add(5);
+            numbers.Add(6);
+            numbers.Add(7);
+            System.Console.WriteLine("..........................");
+            foreach (string n in names)
+                System.Console.WriteLine(n);
+            System.Console.WriteLine("..........................");
+            foreach (int n in numbers)
+                System.Console.WriteLine(n);
+            System.Console.WriteLine("..........................");
+
+
+        }
+    }
+}
+
+// donot forget to import "using System.Collections.Generic" at top; 

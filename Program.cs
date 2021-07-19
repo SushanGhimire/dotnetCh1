@@ -1,32 +1,41 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 namespace testing
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ArrayList al = new ArrayList();
-            al.Add(1);
-            al.Add(80);
-            al.Add(13);
-            al.Add(120);
-            al.Add(100);
-            foreach (int i in al)
-                System.Console.WriteLine(i);
-            al.RemoveAt(2); // removing the data of index 2 from array i.e 23
-            al.Remove(100); // removing 100 from array
-            System.Console.WriteLine("...........................");
-            foreach (int i in al)
-                System.Console.WriteLine(i);
-            System.Console.WriteLine("...........................");
-            System.Console.WriteLine("Sorted Array ");
-            al.Sort();
-            foreach (int i in al)
-                System.Console.WriteLine(i);
+            List<string> names = new List<string>();
+            List<int> numbers = new List<int>();
+
+            names.Add("A");
+            names.Add("B");
+            names.Add("C");
+            names.Add("D");
+            names.Add("E");
+            names.Add("F");
+            names.Add("G");
+            names.Add("H");
+
+            numbers.Add(1);
+            numbers.Add(2);
+            numbers.Add(3);
+            numbers.Add(4);
+            numbers.Add(5);
+            numbers.Add(6);
+            numbers.Add(7);
+            System.Console.WriteLine("..........................");
+            foreach (string n in names)
+                System.Console.WriteLine(n);
+            System.Console.WriteLine("..........................");
+            foreach (int n in numbers)
+                System.Console.WriteLine(n);
+            System.Console.WriteLine("..........................");
+
 
         }
     }
 }
 
-// donot forget to import "using System.Collections" at top; 
+// donot forget to import "using System.Collections.Generic" at top; 
