@@ -3,25 +3,25 @@ namespace testing
 {
     class Parent
     {
-        //keyword "virtual" written in method means it is going to override in the child class
-        public void display()
+        // Encapsulation is implemented by using access specifiers.
+        //access specifiers are
+        //public,private,protected,internal, protected Internal
+        public int area = 20; // accessable from entire program
+        private int length; //accessable only from Parent Class
+
+        public void display(int a)
         {
-            System.Console.WriteLine("I am from Parent");
-        }
-    }
-    class Child : Parent
-    {
-        public new void display()
-        {
-            System.Console.WriteLine("I am from Child");
+            this.length = a;
+            System.Console.WriteLine(length);
         }
     }
     class run
     {
         static void Main(string[] args)
         {
-            Child c = new Child();
-            c.display();
+            Parent p = new Parent();
+            p.display(10);
+            System.Console.WriteLine(p.area);
         }
 
     }
