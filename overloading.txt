@@ -1,0 +1,24 @@
+using System;
+namespace testing
+{
+    class Program
+    {
+        public static int Display(int a, int b)
+        {
+            return a + b;
+        }
+        public static string Display(string name)
+        {
+            return name;
+        }
+
+    }
+    class run
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(Program.Display(1, 2));
+            System.Console.WriteLine(Program.Display("Vatiz"));
+        }
+    }
+}

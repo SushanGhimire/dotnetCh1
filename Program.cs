@@ -1,46 +1,27 @@
 ﻿using System;
-using System.Linq;
-using System.Collections.Generic;
 namespace testing
 {
-    class Program
+    class Parent
     {
-        public class Student
+        //keyword "virtual" written in method means it is going to override in the child class
+        public virtual void display()
         {
-            public int Id { get; set; }
-            public string name { get; set; }
-            public int age { get; set; }
+            System.Console.WriteLine("I am from Parent");
         }
+    }
+    class Child : Parent
+    {
+        public override void display()
+        {
+            System.Console.WriteLine("I am from Child");
+        }
+    }
+    class run
+    {
         static void Main(string[] args)
         {
-            //declearing  the array
-            List<Student> sutdentList = new List<Student>()
-            {
-                new Student (){
-                    Id=1,name="A", age=12
-                },
-                 new Student (){
-                    Id=2,name="B", age=20
-                },
-                 new Student (){
-                    Id=3,name="C", age=17
-                },
-                 new Student (){
-                    Id=4,name="D", age=22
-                },
-            };
-            var teenager = from s in sutdentList
-                           where s.age > 12 && s.age < 18
-                           select s;
-            var adult = from s in sutdentList
-                        where s.age > 18
-                        select s;
-            System.Console.WriteLine("Teenagers");
-            foreach (var n in teenager)
-                System.Console.WriteLine("Age of {0} is {1}", n.name, n.age);
-            System.Console.WriteLine("Adults");
-            foreach (var n in adult)
-                System.Console.WriteLine("Age of {0} is {1}", n.name, n.age);
+            Child c = new Child();
+            c.display();
         }
 
     }
