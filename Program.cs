@@ -4,14 +4,14 @@ namespace testing
     class Parent
     {
         //keyword "virtual" written in method means it is going to override in the child class
-        public virtual void display()
+        public void display()
         {
             System.Console.WriteLine("I am from Parent");
         }
     }
     class Child : Parent
     {
-        public override void display()
+        public new void display()
         {
             System.Console.WriteLine("I am from Child");
         }
